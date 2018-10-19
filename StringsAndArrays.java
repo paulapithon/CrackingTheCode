@@ -28,5 +28,9 @@ public class StringsAndArrays {
         System.out.println(StringCompression.run("aaabbdccccc")); //a3b2d1c5
         System.out.println(StringCompression.run("aaabbbbbbdcefggg")); //a3b6d1c1e1f1g3
         System.out.println(StringCompression.run("aaabbdcefggg")); //aaabbdcefggg
+
+        /**1.9**/
+        System.out.println(stringRotation("olar", "loar")); //false
+        System.out.println(stringRotation("olar", "laro")); //true
     }
 }
