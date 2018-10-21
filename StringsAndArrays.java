@@ -29,8 +29,27 @@ public class StringsAndArrays {
         System.out.println(StringCompression.run("aaabbbbbbdcefggg")); //a3b6d1c1e1f1g3
         System.out.println(StringCompression.run("aaabbdcefggg")); //aaabbdcefggg
 
+        /**1.8**/
+        int[][] matrix = new int[][] {{1,0,4,3},{2,3,4,5},{0,2,3,4}};
+        //0 0 0 0 
+        //0 0 4 5 
+        //0 0 0 0 
+        printMatrix(ZeroMatrix.run(matrix));
+
         /**1.9**/
-        System.out.println(stringRotation("olar", "loar")); //false
-        System.out.println(stringRotation("olar", "laro")); //true
+        System.out.println(StringRotation.run("olar", "loar")); //false
+        System.out.println(StringRotation.run("olar", "laro")); //true
+    
+    }
+
+    private static void printMatrix(int[][] matrix) {
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                System.out.print(matrix[i][j] + " ");
+            }
+            System.out.println();
+        }
     }
 }
+
+
